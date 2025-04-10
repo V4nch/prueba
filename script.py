@@ -16,7 +16,7 @@ def print_hi(m, n, matriz):
                         matriz2[i][j] += matriz2[i-1][j]
                     if j>0:
                         matriz2[i][j] += matriz2[i][j-1]
-    print(matriz2)
+
     return matriz2[m-1][n-1]
 def funcion2():
 
@@ -26,7 +26,6 @@ def funcion2():
 
 if __name__ == '__main__':
     matriz_aleatoria = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 1, 0, 1], [1, 0, 0, 0]]
-    print(matriz_aleatoria)
     print(print_hi(4,4, matriz_aleatoria))
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
